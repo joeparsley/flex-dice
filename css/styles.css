@@ -1,0 +1,59 @@
+body {
+  background-color: cadetblue; }
+
+.wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.dice {
+  background-color: salmon;
+  height: 200px;
+  width: 200px;
+  border: 7px outset lightgray;
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap; }
+
+.pip {
+  box-sizing: border-box;
+  background-color: #3a4040;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin: 20px;
+  border: 2px inset darkgray; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.first-face {
+  justify-content: center;
+  align-items: center; }
+
+.second-face {
+  justify-content: space-between; }
+  .second-face .pip:nth-child(2) {
+    align-self: flex-end; }
+
+.third-face {
+  justify-content: space-between; }
+  .third-face .pip:nth-child(2) {
+    align-self: center; }
+  .third-face .pip:nth-child(3) {
+    align-self: flex-end; }
+
+.fourth-face {
+  justify-content: space-around; }
+
+.fifth-face {
+  justify-content: space-between; }
+  .fifth-face .pip:nth-child(3) {
+    align-self: center; }
+
+.sixth-face {
+  justify-content: space-around; }
+
+/*# sourceMappingURL=styles.css.map */
